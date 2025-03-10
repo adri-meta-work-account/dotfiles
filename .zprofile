@@ -167,10 +167,10 @@ setopt PROMPT_SUBST
 # PROMPT='[%n@%m %1~]%F{green}(${vcs_info_msg_0_})%F{white}$ '
 PROMPT='%F{white}adri %F{cyan}%1~%F{green}(${vcs_info_msg_0_})%F{cyan}$%F{$reset_color} '
 
-#these 3 lines were aded for nvm (node.js)
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+# #these 3 lines were aded for nvm (node.js)
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 alias l='ls -lF'
 alias la='ls -alF'
