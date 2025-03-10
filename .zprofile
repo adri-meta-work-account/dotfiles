@@ -164,8 +164,8 @@ precmd() { vcs_info }
 zstyle ':vcs_info:git:*' formats '%b'
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
-# PROMPT='[%n@%m %1~]%F{green}(${vcs_info_msg_0_})%F{white}$ '
-PROMPT='%F{white}adri %F{cyan}%1~%F{green}(${vcs_info_msg_0_})%F{cyan}$%F{$reset_color} '
+# PROMPT='%F{white}adri %F{cyan}%1~%F{green}(${vcs_info_msg_0_})%F{cyan}$%F{$reset_color} '
+PROMPT='%F{white}adri %F{cyan}%1~%F{green}${vcs_info_msg_0_:+ (${vcs_info_msg_0_})}%F{cyan}$%F{$reset_color} '
 
 # #these 3 lines were aded for nvm (node.js)
 # export NVM_DIR="$HOME/.nvm"
